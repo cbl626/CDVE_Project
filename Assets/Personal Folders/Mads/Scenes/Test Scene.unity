@@ -466,6 +466,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: First-Person Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7480007685840322614, guid: a8fb5b2f6da614293ac84079ae68ebaf, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480007686705396601, guid: a8fb5b2f6da614293ac84079ae68ebaf, type: 3}
+      propertyPath: m_Depth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480007686705396601, guid: a8fb5b2f6da614293ac84079ae68ebaf, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7480007686705396605, guid: a8fb5b2f6da614293ac84079ae68ebaf, type: 3}
       propertyPath: sensitivity.x
       value: 1
@@ -1003,6 +1015,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d06bcd9068b854731a8d3f71dc56346e, type: 3}
+--- !u!1 &1406098044 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2009491507455051674, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+  m_PrefabInstance: {fileID: 2895557068261404284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1415138477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7480007685840322614, guid: a8fb5b2f6da614293ac84079ae68ebaf, type: 3}
+  m_PrefabInstance: {fileID: 734640426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1415138485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415138477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5f14da76905f4c048bce079eb71d892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableTablet: Interactable_Tablet
+  tabletAreaCollider: Tablet_Area_Collider
+  interactionInstruction: {fileID: 1406098044}
 --- !u!1 &1575312750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,9 +1241,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 298390206037335953, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+      propertyPath: m_Name
+      value: Interactable Tablet
+      objectReference: {fileID: 0}
+    - target: {fileID: 298390206037335953, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+      propertyPath: m_TagString
+      value: Interactable_Tablet
+      objectReference: {fileID: 0}
+    - target: {fileID: 380186618930466966, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+      propertyPath: m_Name
+      value: Customizable Painting
+      objectReference: {fileID: 0}
+    - target: {fileID: 1373589773155459970, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+      propertyPath: m_Name
+      value: Tablet Pillar
+      objectReference: {fileID: 0}
     - target: {fileID: 2895557066531661110, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
       propertyPath: m_Name
-      value: Clickable Tablet
+      value: Interactable Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2895557066531661110, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2895557066531661111, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
       propertyPath: m_RootOrder
@@ -1214,7 +1271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2895557066531661111, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -189.411
+      value: -189.41101
       objectReference: {fileID: 0}
     - target: {fileID: 2895557066531661111, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1230,15 +1287,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2895557066531661111, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2895557066531661111, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2895557066531661111, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2895557066531661111, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1251,6 +1308,42 @@ PrefabInstance:
     - target: {fileID: 2895557066531661111, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3076580168014387464, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081429124336766077, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102278457118310224, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269794301176022878, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612784611012565797, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+      propertyPath: m_Name
+      value: Tablet Area Collider
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612784611012565797, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+      propertyPath: m_TagString
+      value: Tablet_Area_Collider
+      objectReference: {fileID: 0}
+    - target: {fileID: 7190015612006868359, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8475140294166845108, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8926266100597688824, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
+      propertyPath: m_Name
+      value: Tablet Screen Text
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1232fb572cbf74425a26fd520d2af6f9, type: 3}
