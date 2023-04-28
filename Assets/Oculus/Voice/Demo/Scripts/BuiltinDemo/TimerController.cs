@@ -29,7 +29,7 @@ namespace Oculus.Voice.Demo.BuiltInDemo
     /// </summary>
     public class TimerController : MonoBehaviour
     {
-        private double _time = 0; // [sec] current time of the countdown timer.
+	    private double _time = 0; // [sec] current time of the countdown timer.
         private bool _timerExist = false;
         private bool _timerRunning = false;
 
