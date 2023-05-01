@@ -183,7 +183,7 @@ public class StableDiffusionText2Material : StableDiffusionGenerator
         if (_normalMapStrength != normalMapStrength)
         {
             MeshRenderer mr = GetMeshRenderer();
-            if (mr != null)
+            if (mr != null && mr.sharedMaterial != null)
                 mr.sharedMaterial.SetFloat("_BumpScale", normalMapStrength);
 
             UpdateMaterialProperties();
@@ -202,7 +202,8 @@ public class StableDiffusionText2Material : StableDiffusionGenerator
             _smoothness = smoothness;
         }
 #endif
-    }
+}
+
 
 
     // Internally keep tracking if we are currently generating (prevent re-entry)
@@ -503,7 +504,7 @@ public class StableDiffusionText2Material : StableDiffusionGenerator
     void UpdateMaterialProperties()
     {
         MeshRenderer mr = GetMeshRenderer();
-        if (mr == null)
+        if (mr == null || mr.sharedMaterial == null)
             return;
 
         // Apply tilling, metallic and smoothness
@@ -536,6 +537,7 @@ public class StableDiffusionText2Material : StableDiffusionGenerator
                 }
         }
     }
+
 
 
     /// <summary>
