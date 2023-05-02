@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3174449733683791182
+--- !u!1 &2363819655583225162
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,50 +8,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3174449733683791181}
-  - component: {fileID: 3174449733683791217}
-  - component: {fileID: 3174449733683791218}
-  - component: {fileID: 3174449733683791219}
-  - component: {fileID: 3174449733683791180}
+  - component: {fileID: 2363819655583225525}
+  - component: {fileID: 2363819655583225526}
+  - component: {fileID: 2363819655583225527}
+  - component: {fileID: 2363819655583225160}
+  - component: {fileID: 2363819655583225161}
   m_Layer: 0
-  m_Name: Paintable Canvas
+  m_Name: Painting1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3174449733683791181
+--- !u!4 &2363819655583225525
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3174449733683791182}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 9.02, y: 5.19, z: -5.97}
-  m_LocalScale: {x: 3, y: 2, z: 0.099999994}
+  m_GameObject: {fileID: 2363819655583225162}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -5.972, y: 5.41, z: -7.02}
+  m_LocalScale: {x: 3, y: 2, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 180}
---- !u!33 &3174449733683791217
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!33 &2363819655583225526
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3174449733683791182}
+  m_GameObject: {fileID: 2363819655583225162}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &3174449733683791218
+--- !u!23 &2363819655583225527
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3174449733683791182}
+  m_GameObject: {fileID: 2363819655583225162}
   m_Enabled: 1
-  m_CastShadows: 0
+  m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -85,41 +85,41 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3174449733683791219
+--- !u!65 &2363819655583225160
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3174449733683791182}
+  m_GameObject: {fileID: 2363819655583225162}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3174449733683791180
+--- !u!114 &2363819655583225161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3174449733683791182}
+  m_GameObject: {fileID: 2363819655583225162}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45733077a48ef55438bdf8ea5e658283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guid: e3299809-c007-41c9-bd50-100f205be201
-  prompt: pegasus jumping on giant mushrooms
-  negativePrompt: frame
+  guid: 3211eb11-7e8e-4544-b892-6ccc6d701db4
+  prompt: a oil painting of a cat eating cheese
+  negativePrompt: 
   selectedSampler: 0
-  width: 600
-  height: 400
+  width: 640
+  height: 480
   steps: 75
   cfgScale: 7
   seed: -1
-  generatedSeed: 1329026417
+  generatedSeed: 2406109040
   tiling: 0
   tilingX: 1
   tilingY: 1
