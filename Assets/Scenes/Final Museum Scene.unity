@@ -2410,6 +2410,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4597469912371333374, guid: 58f0dc4016f8e4d199b52b33dd98951c, type: 3}
+      propertyPath: TabNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597469912371333374, guid: 58f0dc4016f8e4d199b52b33dd98951c, type: 3}
       propertyPath: CurrentWeatherType
       value: 
       objectReference: {fileID: 0}
