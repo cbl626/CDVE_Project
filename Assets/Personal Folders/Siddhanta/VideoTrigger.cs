@@ -14,6 +14,7 @@ public class VideoTrigger : MonoBehaviour
         {
             if (!isPlaying)
             {
+                videoPlayer.targetCameraAlpha = 1f;
                 videoPlayer.Play();
                 isPlaying = true;
             }
@@ -26,6 +27,7 @@ public class VideoTrigger : MonoBehaviour
         {
             if (isPlaying)
             {
+                videoPlayer.targetCameraAlpha = 0f;
                 videoPlayer.Pause();
                 isPlaying = false;
             }
