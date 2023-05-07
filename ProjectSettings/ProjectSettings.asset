@@ -712,7 +712,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Standalone: UNISTORM_PRESENT
+    Standalone: UNISTORM_PRESENT;TERRAINPACKAGE_EXIST
     Windows Store Apps: UNISTORM_PRESENT
   additionalCompilerArguments: {}
   platformArchitecture: {}
